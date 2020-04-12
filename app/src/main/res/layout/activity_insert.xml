@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="insertIntoDb"
+        android:layout_marginTop="56dp"
+        android:text="click to insert into DB"
+        app:layout_constraintEnd_toEndOf="@+id/insertIdEditText"
+        app:layout_constraintStart_toStartOf="@+id/insertIdEditText"
+        app:layout_constraintTop_toBottomOf="@+id/insertIdEditText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="insertcancel"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/insertNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:hint="Student name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/insertIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:hint="StudentID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/insertNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/insertNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/insertNameEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
